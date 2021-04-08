@@ -1,15 +1,17 @@
 import React from 'react'
 import Title from './Title'
-import logo from '../../server'
-import { Link } from 'react-router-dom'
-
+// import logo from '../../server/public/images/logo.gif'
+const logo = './images/logo.gif'
 
 
 function Header() { 
+
   return (
     <div>
       <Title />
-      <logo />
+      <img src={logo} alt="loading..." />
     </div>
   ) 
 }
+
+export default Header
