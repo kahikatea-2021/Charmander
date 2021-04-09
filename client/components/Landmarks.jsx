@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Landmarks from '../../data/landmarks'
+import landmarks from '../../data/landmarks'
 
 function Landmarks() {
   return (
