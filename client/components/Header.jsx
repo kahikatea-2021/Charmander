@@ -6,9 +6,9 @@ const logo = './images/gif.gif'
 function Header() { 
 
   return (
-    <div className='bg-green-300 flex-initial items-center'>
-      <h1>Pokemon Regions Viewer</h1>
-      <img src={logo} alt="loading..." />
+    <div className='bg-pink-400 flex'>      
+      <img className='object-right rounded-full flex flex-col items-center' src={logo} alt="loading..." />
+      <h1 className='flex-col items-right text-7xl'>Pokemon Regions</h1>
     </div>
   ) 
 }
