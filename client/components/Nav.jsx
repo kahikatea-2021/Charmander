@@ -6,12 +6,12 @@ import regionsData from '../../data/regions'
 function Nav (props) {
     const url = props.location.pathname
     return (
-        <div>
-          <h2>Regions Navigator</h2>
+        <div className='mt-9 ml-9'>
+          <h2 className='text-3xl'>Regions Navigator</h2>
           <ul>
-            <li><Link to='/'>Home</Link></li>
+            <li className='text-xl'><Link to='/'>Home</Link></li>
           </ul>
-          <ul>
+          <ul className='text-xl'>
             {regionsData.map((region) => {
               return <li key={region.id} className={url.includes(region.name) ? 'selected' : ''}>
                 <Link to={`/region/${region.name}`}>{region.name}</Link>

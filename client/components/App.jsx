@@ -12,11 +12,17 @@ import Nav from './Nav'
 function App() {
   return (
     <>
-    <div className='App'>
-      <Header/>
-      <Home />
+    <div className='bg-pink-400'>
+      <div>
+        <Header/>
+      </div>
+      <div className='bg-green-400 flex grid-cols-2'>
       <Route path='/' component={Nav} />
-      <Footer />
+        <Home />      
+      </div>
+      <div className='bg-pink-400 flex flex-col items-center'>
+        <Footer />
+      </div>
     </div>
     </>
   )
