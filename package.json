@@ -14,7 +14,8 @@
     "test": "jest",
     "test:watch": "jest --watchAll",
     "webpack": "webpack --config ./client/webpack.config.js",
-    "lint": "eslint --ext .js,.jsx ."
+    "lint": "eslint --ext .js,.jsx .",
+    "tailwind": "tailwindcss build server/src/style.css -o server/public/tailwind.css"
   },
   "keywords": [
     "frontend"
@@ -37,9 +38,12 @@
     ]
   },
   "dependencies": {
+    "autoprefixer": "^10.2.5",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "postcss": "^8.2.9",
     "react-router-dom": "^5.2.0",
+    "tailwindcss": "^2.1.1",
     "webpack": "^4.46.0"
   },
   "devDependencies": {

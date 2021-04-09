@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import regionsData from '../../data/regions'
 
 function Nav (props) {
-    const regions = Object.keys(regionsData)
     const url = props.location.pathname
     return (
         <div>
