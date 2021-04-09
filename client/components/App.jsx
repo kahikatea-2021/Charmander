@@ -1,4 +1,5 @@
 import React from 'react'
+import { Route } from 'react-router-dom'
 
 import Home from './Home'
 import Landmarks from './Landmarks'
@@ -14,7 +15,7 @@ function App() {
     <div className='App'>
       <Header/>
       <Home />
-      <Nav />
+      <Route path='/' component={Nav} />
       <Footer />
     </div>
     </>
