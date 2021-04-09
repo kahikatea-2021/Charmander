@@ -5,7 +5,7 @@ import regionsData from '../../data/regions'
 
 function Nav (props) {
     const regions = Object.keys(regionsData)
-
+    const url = props.location.pathname
     return (
         <div>
           <h2>Regions Navigator</h2>
@@ -13,9 +13,9 @@ function Nav (props) {
             <li><Link to='/'>Home</Link></li>
           </ul>
           <ul>
-            {regionsData.map((name, i) => {
-              return <li key={i} className={url.includes(name) ? 'selected' : ''}>
-                <Link to={`/region/${name}`}>{name}</Link>
+            {regionsData.map((region) => {
+              return <li key={region.id} className={url.includes(region.name) ? 'selected' : ''}>
+                <Link to={`/region/${region.name}`}>{region.name}</Link>
               </li>
             })}
           </ul>
